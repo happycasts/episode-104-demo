@@ -5,10 +5,10 @@
       <th class="intro">Intro</th>
     </tr>
 
-    <% @users.each do |u| %>
+    <% @users.each_with_hit do |record, hit| %>
       <tr class="list">
-        <td class="name"><%= u.name %></td>
-        <td class="intro"><%= u.intro %></td>
+        <td class="name"><%= hit.highlight.name ? (raw hit.highlight.name[0]) : record.name %></td>
+        <td class="intro"><%= hit.highlight.intro ? (raw hit.highlight.intro[0]) : record.intro %></td>
       </tr>
     <% end %>
   </table>

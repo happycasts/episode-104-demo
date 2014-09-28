@@ -29,6 +29,12 @@ class UsersController < ApplicationController
           query: params[:q].to_s,
           fields: ['name', 'intro']
         }
+      },
+      highlight: {
+        fields: {
+          name: {},
+          intro: {}
+        }
       }
     ).records
   end
