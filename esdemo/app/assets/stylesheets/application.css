@@ -25,3 +25,43 @@
   margin: 0 auto;
   font-size: 18px;
 }
+
+table {
+  margin-top: 50px;
+  width: 900px;
+  border-collapse: collapse;
+}
+th.name {
+  width: 100px;
+  text-align: center;
+}
+th.index {
+  width: 150px;
+}
+th.intro {
+  width: 600px;
+}
+tr th{
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+tr td {
+  padding: 10px 20px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+td.action {
+  padding: 10px 10px;
+}
+td.action {
+  width: 50px;
+}
+
+.list .name {
+  text-align: center;
+}
+
+a {
+  color: #1d9d74;
+}
+
