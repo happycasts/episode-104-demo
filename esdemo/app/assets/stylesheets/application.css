@@ -65,3 +65,68 @@ a {
   color: #1d9d74;
 }
 
+.nav-search {
+  margin-top: 50px;
+  line-height: 24px;
+}
+
+.nav-search .nav-search-input {
+  border: 1px solid #6FB3E0;
+  width: 189px;
+  height: 28px !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 4px !important;
+  font-size: 13px;
+  color: #666 !important;
+  z-index: 11;
+  -webkit-transition: width ease .15s;
+  transition: width ease .15s;
+}
+
+.nav-search .nav-search-input:focus, .nav-search .nav-search-input:hover {
+  border-color: #6FB3E0;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="submit"]:focus {
+  background-color: #fff;
+  outline: none;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+span.input-icon {
+  display: inline-block;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon>input {
+  padding-left: 24px;
+  padding-right: 6px;
+}
+
+.input-icon>.ace-icon {
+  z-index: 2;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 3px;
+  display: inline-block;
+}
+
+.nav-search .nav-search-icon {
+  color: #6FB3E0 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-search-icon {
+  border: none;
+  border-radius: 0;
+  padding: 0 3px !important;
+}

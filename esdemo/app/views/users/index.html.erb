@@ -1,3 +1,12 @@
+<div class="nav-search">
+  <%= form_tag search_users_path, method: 'get' do %>
+  <span class="input-icon">
+    <%= text_field_tag :q, params[:q], placeholder: "Search ...", autocomplete: "off", class: "nav-search-input" %>
+    <i class="ace-icon fa fa-search nav-search-icon"></i>
+  </span>
+  <% end %>
+</div>
+
 <table>
   <tr>
     <th class="index name">Name</th>
